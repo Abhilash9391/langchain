@@ -87,10 +87,6 @@ See `requirements.txt` for the full list. The main packages are:
 - For production use, consider error handling, rate limiting, and secure management of API keys.
 - Some models (especially Hugging Face local models) may require significant computational resources.
 
-## Contributing
+## Future Work
+- Embedding models
 
-Feel free to add more examples or improve existing ones!
-
-## License
-
-This project is for educational purposes. Please refer to the licenses of the respective model providers and LangChain.
