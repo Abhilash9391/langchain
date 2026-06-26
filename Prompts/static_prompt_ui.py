@@ -1,5 +1,6 @@
 from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 
@@ -8,9 +9,16 @@ llm = HuggingFaceEndpoint(
     task = "text-generation"
 )
 
-
 model = ChatHuggingFace(llm=llm)
 
-result = model.invoke("Tell me the best 5 things to do  before going to sleep")
+st.header("Research Tool")
 
-print(result.content)
+user_input = st.text_input("Enter your prompt")
+
+
+if st.button("Summarize"):
+    result = model.invoke(user_input)
+    st.write(result.content)
+
+
+
