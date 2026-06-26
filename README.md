@@ -21,12 +21,22 @@ Each script demonstrates how to initialize the model, set parameters (like tempe
 ├── 2.ChatModels/
 │   ├── anthropic.py          # Anthropic Claude chat model
 │   ├── google.py             # Google Gemini chat model
-        ├── huggingface.py    # Hugging Face hosted models
-        ├── huggingface_local.py # Hugging Face local models
-        └── openai.py         # OpenAI chat model
+│   ├── huggingface.py        # Hugging Face hosted models
+│   ├── huggingface_local.py  # Hugging Face local models
+│   └── openai.py             # OpenAI chat model
+├── 3.EmbeddingModels/
+│   ├── huggingface_local.py  # Hugging Face local embeddings
+│   ├── openai_docs.py        # OpenAI embeddings for document processing
+│   └── openai_query.py       # OpenAI embeddings for query processing
+├── Prompts/
+│   ├── chatbot.py            # Interactive chatbot with prompt templates
+│   ├── dynamic_prompt_ui.py  # Dynamic prompt tuning with UI
+│   ├── messages.py           # Message prompt templates examples
+│   └── static_prompt_ui.py   # Static prompt templates with UI
 ├── .env                      # Environment variables for API keys
 ├── requirements.txt          # Python dependencies
-└── test.py                   # Simple test to check LangChain version
+├── test.py                   # Simple test to check LangChain version
+└── README.md
 ```
 
 ## Setup
@@ -62,6 +72,8 @@ Run any of the example scripts to see the model in action. For example:
 ```bash
 python 2.ChatModels/openai.py
 python 2.ChatModels/anthropic.py
+python 3.EmbeddingModels/openai_query.py
+python Prompts/chatbot.py
 ```
 
 Each script will print the model's response to a sample prompt.
