@@ -100,5 +100,8 @@ See `requirements.txt` for the full list. The main packages are:
 - Some models (especially Hugging Face local models) may require significant computational resources.
 
 ## Future Work
-- Embedding models
+- Chains (demonstrating LLM chains like LLMChain, SequentialChain)
+- Agents (demonstrating LangChain agents with tools)
+- Memory (demonstrating conversation memory capabilities)
+- Retrieval-Augmented Generation (RAG) combining embeddings with LLMs
 
