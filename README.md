@@ -12,6 +12,8 @@ The project includes example scripts for interacting with:
 
 Each script demonstrates how to initialize the model, set parameters (like temperature), and invoke the model with a sample prompt.
 
+The project also includes various chain examples demonstrating how to combine multiple models and prompts for more complex workflows.
+
 ## Folder Structure
 
 ```
@@ -28,6 +30,11 @@ Each script demonstrates how to initialize the model, set parameters (like tempe
 │   ├── huggingface_local.py  # Hugging Face local embeddings
 │   ├── openai_docs.py        # OpenAI embeddings for document processing
 │   └── openai_query.py       # OpenAI embeddings for query processing
+├── Chains/
+│   ├── simple_chain.py       # Simple sequential LLM chain with Hugging Face model
+│   ├── sequential_chain.py   # Sequential chain with multiple prompts and models
+│   ├── parallel_chain.py     # Parallel chain executing multiple chains simultaneously
+│   └── conditional_chain.py  # Conditional chain with branching logic based on conditions
 ├── Prompts/
 │   ├── chatbot.py            # Interactive chatbot with prompt templates
 │   ├── dynamic_prompt_ui.py  # Dynamic prompt tuning with UI
@@ -100,7 +107,6 @@ See `requirements.txt` for the full list. The main packages are:
 - Some models (especially Hugging Face local models) may require significant computational resources.
 
 ## Future Work
-- Chains (demonstrating LLM chains like LLMChain, SequentialChain)
 - Agents (demonstrating LangChain agents with tools)
 - Memory (demonstrating conversation memory capabilities)
 - Retrieval-Augmented Generation (RAG) combining embeddings with LLMs
